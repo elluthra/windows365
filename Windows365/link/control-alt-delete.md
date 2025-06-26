@@ -40,7 +40,7 @@ When you press Control + Alt + Delete on your Windows 365 Link, you see the foll
 | Task Manager | Opens the Task Manager of your Cloud PC. |
 | Connection details | Shows information about the current connection to your Cloud PC. |
 | Quick settings | Opens a small set of essential settings. For more information, see [Quick settings](quick-settings.md). |
-| Connection Center | The Connection Center in Windows 365 Boot lets users easily choose between multiple Cloud PCs at sign-in and access self-service tools like reboot and restore — no IT needed. It streamlines the experience and enhances control. |
+| Connection Center | The Connection Center in Windows 365 Boot lets users easily choose between multiple Cloud PCs at sign-in and access self-service tools like reboot and restore—no IT needed. It streamlines the experience and enhances control. |
 
 <!-- ########################## -->
 ## Next steps

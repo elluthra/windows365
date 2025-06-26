@@ -56,9 +56,9 @@ Lock the device using any of these methods:
 
 After the user locks the device, the user is redirected back to the **Sign in** screen.
 
-If Windows 365 Link is locked, the current signed in user’s connection to their Cloud PC is maintained until Cloud PC’s idle time-out expires (Intune admins can configure the time-out duration which defaults to 15 minutes). Within this time window, if the user unlocks Windows 365 Link by completing the authentication experience again, they're taken directly on their Cloud PC without the need for re-establishing the connection.
+If Windows 365 Link is locked, the current signed in user’s connection to their Cloud PC is maintained until Cloud PC’s idle time-out expires. Intune admins can configure the time-out duration, which defaults to 15 minutes. Within this time window, if the user unlocks Windows 365 Link by completing the authentication experience again, they're taken directly on their Cloud PC without the need for re-establishing the connection.
 
-If a new user signs into the device during this time, the previous user’s Cloud CP connection is disconnected and a new connection is established from the device to the new user’s Cloud PC.
+If a new user signs into the device during this time, the previous user’s Cloud PC connection is disconnected and a new connection is established from the device to the new user’s Cloud PC.
 
 ## Disconnect Windows 365 Link from your Cloud PC
 
@@ -76,7 +76,7 @@ Your data and account information aren't stored on the Windows 365 Link. If some
 
 ## Connection Center
 
-If a user is assigned more than one Windows 365 Cloud PC, the Connection Center screen appears when a user first signs in to their Windows 365 Link device as well as on the Control Alt Delete screen. On the Connection Center screen, users can:
+If a user is assigned more than one Windows 365 Cloud PC, the Connection Center screen appears when a user first signs in to their Windows 365 Link device and on the Control Alt Delete screen. On the Connection Center screen, users can:
 
 - Choose which of their Cloud PCs to connect to.
 - Troubleshoot connection errors.
