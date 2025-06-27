@@ -40,7 +40,7 @@ For information about Windows 365 Enterprise new features, see [What's new in Wi
 
 #### New Connection Center<!—57467212-->
 
-Users can now access the Connection Center by using the Control-Alt-Delete menu. For more information, see [Connection Center](sign-in.md@connection-center).
+Users can now access the Connection Center by using the Control-Alt-Delete menu. For more information, see [Connection Center](sign-in.md#connection-center).
 
 <!-- ########################## -->
 ## Week of June 9, 2025
