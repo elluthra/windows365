@@ -60,7 +60,7 @@ Operational tests were deemed successful if the unit remained functional through
 | Vibration (Category 24)   | Pass |
 | Vibration (Category 4)    | Pass |
 
-\* MIL-STD 810H establishes a methodology for testing products against environmental stresses under controlled laboratory conditions. Such testing is not a guarantee of future performance under these test conditions. Abuse, like that contained in MIL-STD 810H testing, is not covered under Microsoft’s standard warranty.
+\* MIL-STD 810H establishes a methodology for testing products against environmental stresses under controlled laboratory conditions. Such testing isn't a guarantee of future performance under these test conditions. Abuse, like that contained in MIL-STD 810H testing, isn't covered under Microsoft’s standard warranty.
 
 <!-- ########################## -->
 ## Next steps
