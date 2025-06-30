@@ -50,8 +50,12 @@ There are two ways to verify that RDP Multipath is being used for a connection:
 
 ## Opt-out of the RDP Multipath preview
 
-If you experience degraded performance or connectivity issues, you can opt out of the preview by removing your host pool from the validation ring.
+If you prefer to disable the RDP Multipath feature until it is fully rolled out, you can opt out at the session host level using the following registry key.
+
+
+```
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\RdpCloudStackSettings" /v SmilesV3ActivationThreshold /t REG_DWORD /d 0 /f
+```
 
 ## Related content
-
 To learn more about RDP Shortpath, see [RDP Shortpath for Azure Virtual Desktop](rdp-shortpath.md).
