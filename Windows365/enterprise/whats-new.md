@@ -74,7 +74,7 @@ Windows 365 Frontline Cloud PCs have the ability to predict when a user connects
 
 #### Configure non-UTC time zones for bulk reprovisioning for Windows 365 Frontline Cloud PCs in shared mode<!--5768337-->
 
-You can now configure non-UTC time zones when scheduling bulk reprovisioning for Windows 365 Frontline Cloud PCs in shared mode. For more information, see [Schedule bulk reprovision Frontline Cloud PCs in shared mode](frontline-shared-bulk-reprovision.md#schedule-bulk-reprovision-frontline-cloud-pcs-in-shared-mode).
+You can now configure non-UTC time zones when scheduling bulk reprovisioning for Windows 365 Frontline Cloud PCs in shared mode. For more information, see [Schedule bulk reprovision Frontline Cloud PCs in shared mode](frontline-shared-bulk-reprovision.md#schedule-bulk-reprovision-frontline-cloud-pcs-in-shared-mode). 
 
 <!-- ########################## -->
 ## Week of June 23, 2025
