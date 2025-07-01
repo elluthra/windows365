@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 06/23/2025
+ms.date: 07/02/2025
 ms.topic: whats-new
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -54,6 +54,16 @@ For more information about public preview items, see [Public preview in Windows 
 ### Windows 365 Government
 ### Windows 365 app 
 -->
+
+<!-- ########################## -->
+## Week of June 30, 2025 (Service release 2506)
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Device management
+
+#### Two new display language packs for Cloud PCs<!--57724324-->
+
+English (Ireland) and English (Australia) are now available as language packs that you can use in provisioning policies to set up a default display language for Cloud PCs. For more information, see [Use a provisioning policy to set up a default display language on Cloud PCs](use-provisioning-policy-default-display-language.md).
 
 <!-- ########################## -->
 ## Week of June 23, 2025
