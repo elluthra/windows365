@@ -32,7 +32,7 @@ Here's information about the Azure Virtual Desktop Agent.
 | Release | Latest version |
 |--|--|
 | Production | 1.0.11262.1900 |
-| Validation | 1.0.11388.1100|
+| Validation | 1.0.11388.1100 |
 
 > [!TIP]
 > The Azure Virtual Desktop Agent is automatically installed when adding session hosts in most scenarios. If you need to install the agent manually, you can download it at [Register session hosts to a host pool](add-session-hosts-host-pool.md#register-session-hosts-to-a-host-pool), together with the steps to install it.
@@ -44,7 +44,6 @@ Here's information about the Azure Virtual Desktop Agent.
 In this update, we made the following changes:
 
 - Resolved an issue that caused duplicate registrations in Azure Active Directory (AAD).  
-
 - Optimized telemetry flow. 
 
 ## Version 1.0.11262.1900
