@@ -37,6 +37,8 @@ items:
     href: deployment-overview.md
   - name: Requirements
     href: requirements.md
+  - name: Connection endpoints
+    href: connection-endpoints.md
   - name: Onboard Windows 365 Link devices
     href: onboarding.md
   - name: Join Windows 365 Link to Microsoft Entra
