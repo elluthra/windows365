@@ -51,6 +51,8 @@ Review the [Prerequisites for Azure Virtual Desktop](prerequisites.md) for a gen
 
 In addition to the general prerequisites, you need:
 
+- The Azure Virtual Desktop service principal needs to be assigned the [**Desktop Virtualization Virtual Machine Contributor**](rbac.md#desktop-virtualization-virtual-machine-contributor) role-based access control (RBAC) role on the resource group or subscription you want to use for your session hosts. For more information, see [Assign Azure RBAC roles or Microsoft Entra roles to the Azure Virtual Desktop service principals](service-principal-assign-roles.md).
+
 - The Azure account you use to create a host pool must have the following built-in role-based access control (RBAC) roles or equivalent as a minimum on the resource group or subscription to create the following resource types. If you want to assign the roles to a resource group, you need to create this first.
 
    | Resource type | RBAC role | Scope |
