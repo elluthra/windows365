@@ -10,7 +10,7 @@ ms.date: 06/02/2025
 # Use RDP Multipath to improve connections to Azure Virtual Desktop
 
 > [!IMPORTANT]
-> RDP Multipath is currently in preview. For legal terms that apply to Azure features that are in beta, in preview, or otherwise not yet released into general availability, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+> **RDP Multipath is now Generally Available (GA).** We are currently rolling out this connection-level feature to production in a phased manner. Until the rollout reaches 100%, you may not experience RDP Multipath consistently across all connections. The progression to each new phase will be quality-driven, ensuring a stable and reliable experience throughout the deployment.
 
 Remote Desktop Protocol (RDP) Multipath improves session stability by continuously monitoring multiple networks paths and dynamically selecting the most reliable one. This intelligent switching mechanism helps reduce the likelihood of disconnections and contributes to a smoother and more consistent user experience.
 
@@ -50,8 +50,12 @@ There are two ways to verify that RDP Multipath is being used for a connection:
 
 ## Opt-out of the RDP Multipath preview
 
-If you experience degraded performance or connectivity issues, you can opt out of the preview by removing your host pool from the validation ring.
+If you prefer to disable the RDP Multipath feature until it is fully rolled out, you can opt out at the session host level using the following registry key.
+
+
+```
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\RdpCloudStackSettings" /v SmilesV3ActivationThreshold /t REG_DWORD /d 0 /f
+```
 
 ## Related content
-
 To learn more about RDP Shortpath, see [RDP Shortpath for Azure Virtual Desktop](rdp-shortpath.md).
