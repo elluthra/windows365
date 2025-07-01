@@ -65,6 +65,13 @@ For more information about public preview items, see [Public preview in Windows 
 
 English (Ireland) and English (Australia) are now available as language packs that you can use in provisioning policies to set up a default display language for Cloud PCs. For more information, see [Use a provisioning policy to set up a default display language on Cloud PCs](use-provisioning-policy-default-display-language.md).
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Windows 365 Frontline
+
+#### Intelligent pre-start for Windows 365 Frontline in dedicated mode (preview)<!--57724415-->
+
+Windows 365 Frontline Cloud PCs have the ability to predict when a user connects and pre-start their Cloud PC before they connect . This prediction improves connect times for such users' Cloud PCs. For more information, see [Intelligent pre-start for Windows 365 Frontline in dedicated mode](introduction-windows-365-frontline.md).
+
 <!-- ########################## -->
 ## Week of June 23, 2025
 
