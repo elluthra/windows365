@@ -72,6 +72,10 @@ English (Ireland) and English (Australia) are now available as language packs th
 
 Windows 365 Frontline Cloud PCs have the ability to predict when a user connects and pre-start their Cloud PC before they connect . This prediction improves connect times for such users' Cloud PCs. For more information, see [Intelligent pre-start for Windows 365 Frontline in dedicated mode](introduction-windows-365-frontline.md).
 
+#### Configure non-UTC time zones for bulk reprovisioning for Windows 365 Frontline Cloud PCs in shared mode<!--5768337-->
+
+You can now configure non-UTC time zones when scheduling bulk reprovisioning for Windows 365 Frontline Cloud PCs in shared mode. For more information, see [Schedule bulk reprovision Frontline Cloud PCs in shared mode](frontline-shared-bulk-reprovision.md#schedule-bulk-reprovision-frontline-cloud-pcs-in-shared-mode). 
+
 <!-- ########################## -->
 ## Week of June 23, 2025
 
