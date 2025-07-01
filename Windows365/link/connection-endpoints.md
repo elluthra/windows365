@@ -58,7 +58,7 @@ The following methodology was used to derive these network endpoints:
 |  Windows Push Notification Services. WNS enables third-party developers to send toast, tile, badge, and raw updates from their own cloud service. This service provides a mechanism to deliver new updates to your users in a power-efficient and dependable way. If you turn off traffic for this endpoint, push notifications don't work, including MDM device management, mail synchronization, settings synchronization. | \*.wns.windows.com<br>\*.notify.windows.com<br> |
 |  Location. The following endpoint is used for location data. If you turn off traffic for this endpoint, Windows 365 Link can't detect its current location (or time zone) | inference.location.live.net<br> |
 |  [Intune](/intune/intune-service/fundamentals/intune-endpoints)  | Manage.microsoft.com<br>\*.manage.microsoft.com<br>\*.mp.microsoft.com<br>Ecs.office.com<br>\*.spserv.microsoft.com<br>enterpriseregistration.windows.net<br>certauth.enterpriseregistration.windows.net<br>lgmsapeweu.blob.core.windows.net<br>lgmsapewus2.blob.core.windows.net<br>lgmsapesea.blob.core.windows.net<br>lgmsapeaus.blob.core.windows.net<br>lgmsapeind.blob.core.windows.net<br>\*.attest.azure.net<br>checkin.dm.microsoft.com<br>\*.azureedge.net<br> |
-|  [Diagnostic data](windows-cpc-os-privacy-data#windows-cpc-diagnostic-data)  | \*.data.microsoft.com<br> |
+|  [Diagnostic data](windows-cpc-os-privacy-dat.md#windows-cpc-diagnostic-data)  | \*.data.microsoft.com<br> |
 |  Browser. These endpoints are used by the WebView components within the Link Device. | edge.microsoft.com<br>static.edge.microsoftapp.net<br>edge-cloud-resource-static.azureedge.net<br>edge-mobile-static.azureedge.net<br> |
 
 ## Additional service endpoints
