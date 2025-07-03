@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 06/23/2025
+ms.date: 07/02/2025
 ms.topic: whats-new
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -54,6 +54,27 @@ For more information about public preview items, see [Public preview in Windows 
 ### Windows 365 Government
 ### Windows 365 app 
 -->
+
+<!-- ########################## -->
+## Week of June 30, 2025 (Service release 2506)
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Device management
+
+#### Two new display language packs for Cloud PCs<!--57724324-->
+
+English (Ireland) and English (Australia) are now available as language packs that you can use in provisioning policies to set up a default display language for Cloud PCs. For more information, see [Use a provisioning policy to set up a default display language on Cloud PCs](use-provisioning-policy-default-display-language.md).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Windows 365 Frontline
+
+#### Intelligent pre-start for Windows 365 Frontline in dedicated mode (preview)<!--57724415-->
+
+Windows 365 Frontline Cloud PCs have the ability to predict when a user connects and pre-start their Cloud PC before they connect . This prediction improves connect times for such users' Cloud PCs. For more information, see [Intelligent pre-start for Windows 365 Frontline in dedicated mode](introduction-windows-365-frontline.md).
+
+#### Configure non-UTC time zones for bulk reprovisioning for Windows 365 Frontline Cloud PCs in shared mode<!--5768337-->
+
+You can now configure non-UTC time zones when scheduling bulk reprovisioning for Windows 365 Frontline Cloud PCs in shared mode. For more information, see [Schedule bulk reprovision Frontline Cloud PCs in shared mode](frontline-shared-bulk-reprovision.md#schedule-bulk-reprovision-frontline-cloud-pcs-in-shared-mode). 
 
 <!-- ########################## -->
 ## Week of June 23, 2025
