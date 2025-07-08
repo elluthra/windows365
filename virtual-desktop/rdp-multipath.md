@@ -10,7 +10,7 @@ ms.date: 06/02/2025
 # Use RDP Multipath to improve connections to Azure Virtual Desktop
 
 > [!IMPORTANT]
-> RDP Multipath is currently in preview. For legal terms that apply to Azure features that are in beta, in preview, or otherwise not yet released into general availability, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+> **RDP Multipath is now Generally Available (GA).** We are currently rolling out this connection-level feature to production in a phased manner. Until the rollout reaches 100%, you may not experience RDP Multipath consistently across all connections. The progression to each new phase will be quality-driven, ensuring a stable and reliable experience throughout the deployment.
 
 Remote Desktop Protocol (RDP) Multipath improves session stability by continuously monitoring multiple networks paths and dynamically selecting the most reliable one. This intelligent switching mechanism helps reduce the likelihood of disconnections and contributes to a smoother and more consistent user experience.
 
@@ -48,10 +48,25 @@ There are two ways to verify that RDP Multipath is being used for a connection:
 
    If you find some connections aren't using RDP Multipath, check that a firewall or other network restrictions doesn't block RDP Shortpath connections. A connection using STUN or TURN protocols is required.
 
-## Opt-out of the RDP Multipath preview
+## Opt-in or Opt-out of the RDP Multipath
 
-If you experience degraded performance or connectivity issues, you can opt out of the preview by removing your host pool from the validation ring.
+RDP Multipath is being rolled out in phases. If you’d like to manually control the feature availability on your session hosts, you can use the following registry key to either opt in or opt out.
+
+### Opt In to RDP Multipath
+To enable RDP Multipath ahead of the full rollout, set the following registry key value to 100:
+
+```
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\RdpCloudStackSettings" /v SmilesV3ActivationThreshold /t REG_DWORD /d 100 /f
+```
+
+### Opt Out of RDP Multipath
+If you prefer to disable RDP Multipath until the rollout is complete, set the registry key value to 0:
+
+```
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\RdpCloudStackSettings" /v SmilesV3ActivationThreshold /t REG_DWORD /d 0 /f
+```
+> [!NOTE]
+> After updating the registry key, users must disconnect and reconnect to the session host for the change to take effect.
 
 ## Related content
-
 To learn more about RDP Shortpath, see [RDP Shortpath for Azure Virtual Desktop](rdp-shortpath.md).

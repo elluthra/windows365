@@ -9,6 +9,8 @@ items:
     href: whats-in-the-box.md
   - name: Tested peripherals
     href: tested-peripherals-windows-365-link.md
+  - name: Hardware test results
+    href: hardware-test-results.md
   - name: Warranty and Protection Plan
     href: warranty.md
   - name: Windows 365 Link security
@@ -35,6 +37,8 @@ items:
     href: deployment-overview.md
   - name: Requirements
     href: requirements.md
+  - name: Connection endpoints
+    href: connection-endpoints.md
   - name: Onboard Windows 365 Link devices
     href: onboarding.md
   - name: Join Windows 365 Link to Microsoft Entra
@@ -49,6 +53,8 @@ items:
     href: conditional-access-policies.md
   - name: Sign-in methods
     href: sign-in-methods.md
+  - name: Certificates and networking
+    href: certificates-networking.md
 - name: Managing Windows 365 Link
   items:
   - name: Management overview

@@ -50,26 +50,26 @@ As part of the process to place Cloud PCs under review, Windows 365 requires the
 
 1. [Create a Storage Account](/azure/storage/common/storage-account-create) in the Azure subscription of your choice. To create the account, you can use PowerShell, Azure CLI, Azure Resource Manager Template, or Azure portal.
 2. Configure the storage account with the following settings;
-    - **Instance details**
+       - **Instance details**
         - **Region**: Same region as Cloud PC suggested for performance. There's no restriction on which region.
         - **Performance**: **Premium** (supports hot access tier) or **Standard** (supports all [access tiers](/azure/storage/blobs/access-tiers-overview)).
         - **Premium account type**: **Page blobs**
-    - **Security**
+       - **Security**
         - Minimum TLS version: **Version 1.2**.
         - Confirm **Allow blob anonymous access** is disabled (the default).
         - Disable **Enable storage account key access**.
-    - **Networking**
+       - **Networking**
         - **Network access**: **Enable public access from all networks**
 
-    OPTIONAL: If you want to copy your storage account copied to immutable storage, set these fields: 
+   OPTIONAL: If you want to copy your storage account copied to immutable storage, set these fields: 
 
-      - Select **Enable versioning for blobs**.
+   - Select **Enable versioning for blobs**.
       - Select **Enable version-level immutability support**.
       - When the **Premium** **Performance** option is selected, **Zone-redundant storage (ZRS)** must also be selected. Locally redundant storage (LRS) isn't a supported immutable storage option.
 
-    After the storage account is created, you must apply a [lock policy](/azure/storage/blobs/immutable-policy-configure-container-scope). For more information about how to configure Azure Blob Storage for immutability and adherence to regulations like SEC Rule 17a-4, see [Azure - Cohasset Assessment - WORM Storage (2024) Report](https://aka.ms/AzureWormStorage).
-
-    NOT SUPPORTED: Setting a [Permit scope for copy operations](/azure/storage/common/security-restrict-copy-operations). It must be (null), the default value, to allow copying from any storage account to the destination account.
+    After the storage account is created, you must apply a [lock policy](/azure/storage/blobs/immutable-policy-configure-container-scope). For more information about how to configure Azure Blob Storage for immutability and adherence to regulations like [SEC Rule 17a-4](/compliance/regulatory/offering-sec-docs), see [Azure - Cohasset Assessment - WORM Storage (2024) Report](https://aka.ms/AzureWormStorage).
+   
+   NOT SUPPORTED: Setting a [Permit scope for copy operations](/azure/storage/common/security-restrict-copy-operations). It must be (null), the default value, to allow copying from any storage account to the destination account.
 
 1. [Assign an Azure role for access to blob data](/azure/storage/blobs/assign-azure-role-data-access). The minimum permissions required for the Windows 365 service to place a Cloud PC under review are **Storage Account Contributor** and **Storage Blob Data Contributor**. Depending on when your tenant was provisioned, the identity for the Windows 365 service for RBAC will be listed as *Windows 365* whereas older tenants may show *Cloud PC*. 
 
@@ -91,9 +91,9 @@ After setting up an Azure storage account with permissions as explained in the p
 
     **Premium performance storage account tiers**: Premium performance is always a hot tier storage account. The drop-down menu for access tier is ignored for Premium performance storage accounts.
 
-4. Under **Access during review**, if you choose
+1. Under **Access during review**, if you choose
 
-   - **Block Access**, the Cloud PC will be immediately powered off so the user can't access the Cloud PC, and then the snapshot will be created. This option is useful in cases where you may want to contain a security threat by shutting down the Cloud PC, and then performing analysis of the snapshot later in an isolated environment.
+- **Block Access**, the Cloud PC will be immediately powered off so the user can't access the Cloud PC, and then the snapshot will be created. This option is useful in cases where you may want to contain a security threat by shutting down the Cloud PC, and then performing analysis of the snapshot later in an isolated environment.
    - **Allow Access**, the Cloud PC user can continue to use the Cloud PC even as you create a snapshot in the storage account.
 
     ![Screenshot of choose a subscription and storage](./media/place-cloud-pc-under-review/subscription-storage.png)

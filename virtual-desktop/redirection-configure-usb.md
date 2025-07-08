@@ -22,7 +22,7 @@ You can configure the redirection of certain USB peripherals between a local Win
 ::: zone pivot="azure-virtual-desktop"
  For Azure Virtual Desktop, USB redirection must be configured at the following points. If any of these components aren't configured correctly, USB redirection won't work as expected. You can use Microsoft Intune or Group Policy to configure your session hosts and the local device.
 
- - Session host
+- Session host
  - Host pool RDP property
  - Local device
 
@@ -392,9 +392,13 @@ To configure USB redirection using host pool RDP properties:
 
 1. For **USB device redirection**, select the drop-down list, then select one of the following options:
 
-   - **Redirect all USB devices that are not already redirected by another high-level redirection** (*default*)
+   - **Don't redirect any USB devices** (*default*)
+   - **Redirect all USB devices that are not already redirected by another high-level redirection**
+      
    - **Redirect all devices that are members of the specified device setup class or devices defined by specific instance ID**
-
+      
+   - **Not configured**
+      
 1. If you select **Redirect all devices that are members of the specified device setup class or devices defined by specific instance ID**, an extra box shows. You need to enter the device setup class or specific device instance path for the devices you want to redirect, separated by a semicolon. For more information, see [Controlling opaque low-level USB redirection](redirection-remote-desktop-protocol.md#controlling-opaque-low-level-usb-redirection). To get the values for supported devices, see [Optional: Retrieve specific device instance IDs](#optional-retrieve-specific-usb-device-instance-ids-to-use-with-opaque-low-level-redirection), and for device class GUIDs, see [Optional: Discover peripherals matching a device setup class](#optional-discover-peripherals-matching-a-device-setup-class). For Azure Virtual Desktop, the characters `\`, `:`, and `;` must be escaped using a backslash character.
 
    Here are some examples:
