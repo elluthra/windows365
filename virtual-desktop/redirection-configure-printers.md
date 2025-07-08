@@ -126,8 +126,10 @@ To configure printer redirection using host pool RDP properties:
 
 1. For **Printer redirection**, select the drop-down list, then select one of the following options:
 
-   - **The printers on the local computer are not available in remote session**
-   - **The printers on the local computer are available in remote session** (*default*)
+   - **The printers on the local computer are not available in remote session** (*default*)
+      
+   - **The printers on the local computer are available in remote session**
+      
    - **Not configured**
 
 1. Select **Save**.

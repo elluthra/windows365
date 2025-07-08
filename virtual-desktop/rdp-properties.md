@@ -362,7 +362,8 @@ To learn how to use this property, see [Configure Media Transfer Protocol and Pi
   - `*`: Redirect all drives, including drives that are connected later.
   - `DynamicDrives`: Redirect any drives that are connected later.
   - `drivestoredirect:s:C:\;E:\;`: Redirect the specified drive letters for one or more drives, such as this example.
-- **Default value**: `*`
+- **Default value**: *`Empty`*
+
 - **Applies to**:
    - Azure Virtual Desktop
    - Remote Desktop Services
@@ -407,7 +408,8 @@ To learn how to use this property, see [Configure camera, webcam, and video capt
 - **Supported values**:
   - `0`: Clipboard on local device isn't available in remote session.
   - `1`: Clipboard on local device is available in remote session.
-- **Default value**: `1`
+- **Default value**: `0`
+
 - **Applies to**:
    - Azure Virtual Desktop
    - Remote Desktop Services
@@ -468,7 +470,8 @@ To learn how to use this property, see [Configure location redirection over the 
 - **Supported values**:
   - `0`: The printers on the local device aren't redirected to a remote session.
   - `1`: The printers on the local device are redirected to a remote session.
-- **Default value**: `1`
+- **Default value**: `0`
+
 - **Applies to**:
    - Azure Virtual Desktop
    - Remote Desktop Services
@@ -514,7 +517,8 @@ To learn how to use this property, see [Configure WebAuthn redirection over the 
   - `*`: Redirect all USB devices that aren't already redirected by high-level redirection.
   - `{*Device Setup Class GUID*}`: Redirect all devices that are members of the specified device setup class.
   - `*USBInstanceID*`: Redirect a specific USB device identified by the instance ID.
-- **Default value**: `*`
+- **Default value**: *`Empty`*
+
 - **Applies to**:
    - Azure Virtual Desktop
    - Remote Desktop Services
@@ -756,4 +760,4 @@ Here are the RDP properties that you can use to configure RemoteApp behavior for
   - A valid application name or alias, for example `EXCEL`.
 - **Default value**: None.
 - **Applies to**:
-   - Remote Desktop Services
+  - Remote Desktop Services

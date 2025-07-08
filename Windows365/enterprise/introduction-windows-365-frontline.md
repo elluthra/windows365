@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 06/20/2025
+ms.date: 07/02/2025
 ms.topic: overview
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -59,6 +59,16 @@ The maximum number of active Windows 365 Frontline Cloud PC sessions in your org
 >
 > Windows 365 Frontline Cloud PCs in dedicated mode automatically powers off after the user signs off from the Cloud PC, and is powered on when the user attempts to connect. It may take more time for the user to connect when the Cloud PC is being powered on. This connection time doesn't include executing logon scripts set by organizations.
 > After the user signs off, the Cloud PC remains powered on for two hours. If the user attempts to reconnect while the Cloud PC is powered on, the connection time is the same as Windows 365 Enterprise Cloud PCs.
+
+### Intelligent pre-start for Windows 365 Frontline in dedicated mode (preview)
+
+Windows 365 Frontline Cloud PCs in dedicated mode can predict when a user connects and pre-start their Cloud PC before they sign in every day. This prediction improves start up times for such users' Cloud PCs. For instance, if a user connects to their Cloud PC every day at 9 AM, the system will recognize that after a few days. When it does, the system will start up that user's Cloud PC around 30 minutes before 9 AM each day and keep it powered on for two hours waiting for the user to connect. Thus, when the user connects at 9 AM, their Cloud PC is already started and they can connect quickly. If the user connects outside their regular start up time, the user must wait for the Cloud PC to start up.
+
+For the prediction to work appropriately, users must connect to their Cloud PCs for at least three days in the past 30 days. If the user doesn't have a pattern of connecting, the prediction might not be accurate and the pre-start won't behave as expected.
+
+Pre-started Cloud PCs don’t consume the license for session connection until the user connection is complete. If the user doesn’t connect within two hours, the Cloud PC automatically shuts down.
+
+Intelligent pre-start is in public preview. During this time, it’s applied to the entire tenant and is on by default (and can’t be turned off by admins).
 
 ## Windows 365 Frontline in shared mode
 
