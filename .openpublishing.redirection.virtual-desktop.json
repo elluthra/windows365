@@ -3,7 +3,7 @@
         {
             "source_path": "virtual-desktop/connect-windows-7-and-10.md",
             "redirect_url": "/azure/virtual-desktop/connect-windows-7-10",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "virtual-desktop/create-file-share.md",
@@ -88,7 +88,7 @@
         {
             "source_path": "virtual-desktop/troubleshoot-azure-monitor.md",
             "redirect_url": "/azure/virtual-desktop/troubleshoot-insights",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "virtual-desktop/whats-new-azure-monitor.md",
@@ -108,7 +108,7 @@
         {
             "source_path": "virtual-desktop/virtual-desktop-fall-2019/connect-windows-7-10-2019.md",
             "redirect_url": "/azure/virtual-desktop/virtual-desktop-fall-2019/connect-windows-2019",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "virtual-desktop/virtual-desktop-fall-2019/deploy-windows-7-virtual-machine.md",
@@ -493,7 +493,7 @@
         {
             "source_path": "virtual-desktop/troubleshoot-session-host-update.md",
             "redirect_url": "/azure/virtual-desktop/troubleshoot-session-host-configuration-update",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "virtual-desktop/create-host-pools-user-profile.md",
