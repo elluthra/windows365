@@ -50,7 +50,7 @@
       "permissioned-type": "public",
       "recommendations": true,
       "recommendation_types": [ "Training", "Certification" ],
-      "zone_pivot_group_filename": "zone-pivot-groups.json"
+      "zone_pivot_group_filename": "virtual-desktop/zone-pivot-groups.json"
     },
     "fileMetadata": {
       "feedback_product_url": {
